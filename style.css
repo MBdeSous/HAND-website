@@ -1,4 +1,6 @@
 body {
+  background-image: url("images/b9bc8f06-ce94-41eb-a1bf-81b56e13d8ec.jpeg");
+  background-size: 100% 100%;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #fffbe7;
@@ -17,7 +19,7 @@ nav a {
   font-weight: bold;
 }
 .intro {
-  padding: 2rem;
+  padding: 1px;
   text-align: center;
   background: #ffe082;
 }
