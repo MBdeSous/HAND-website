@@ -1,16 +1,62 @@
 body {
-  background-image: url("images/b9bc8f06-ce94-41eb-a1bf-81b56e13d8ec.jpeg");
-  background-size: 100% 100%;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #fffbe7;
   color: #333;
+  background-image: url("images/b9bc8f06-ce94-41eb-a1bf-81b56e13d8ec.jpeg");
+  background-size: 100% 100%;
 }
+
+
+
+
+.HeaderItems {
+      display: flex; /* Use Flexbox for layout */
+      justify-content: space-between; /* Push logos to edges, center text */
+      align-items: center; /* Vertically center items */
+      width: 100%; /* Ensure it spans the full width */
+      padding: 10px 0; /* Optional: Add vertical padding */
+    }
+
+    .HANDlogo {
+      width: 150px; /* Adjust logo size as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    h1 {
+      text-align: center; /* Center the text */
+      margin: 0; /* Remove default margin */
+      font-size: 40px; /* Adjust font size as needed */
+    }
+
+
+
+/*
+.HeaderItems {
+  display: flex; /* Use Flexbox for layout */
+ /* align-items: center; /* Vertically center the logo and text */
+ /* justify-content: flex-start; /* Align content to the left */
+/*  gap: 50px; /* Add space between the logo and text */
+/*  padding: 10px; /* Optional: Add padding for better spacing */
+/*}
+
+.HANDlogo {
+  width: 150px; /* Adjust the logo size as needed */
+  /*height: auto; /* Maintain aspect ratio */
+/*
+}*/
+
+
 header {
   background: #ff6f61;
   color: white;
   padding: 1rem;
   text-align: center;
+}
+.Tabs:hover{
+  padding: 10px;
+  background-color: red;
+  border-radius: 8px;
 }
 nav a {
   margin: 0 1rem;
@@ -62,3 +108,64 @@ footer {
   bottom: 0;
   position: static;
 }
+
+
+
+/*
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: #333;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+    .Tabs {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+    }
+    .Tabs:hover {
+      color: #ddd;
+    }
+    section {
+      min-height: 100vh;
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: white;
+    }
+    #home { background-color: #4CAF50; }
+    #about { background-color: #2196F3; }
+    #training { background-color: #f44336; }
+    #contact { background-color: #ff9800; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home" class="Tabs">Home</a>
+    <a href="#about" class="Tabs">About</a>
+    <a href="#training" class="Tabs">Training</a>
+    <a href="#contact" class="Tabs">Contact</a>
+  </nav>
+  <section id="home">Home Section</section>
+  <section id="about">About Section</section>
+  <section id="training">Training Section</section>
+  <section id="contact">Contact Section</section>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>*/
