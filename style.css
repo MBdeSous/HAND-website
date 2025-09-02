@@ -5,137 +5,49 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .HeaderItems {
   display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Push logos to edges, center text */
+  justify-content: space space-between; /* Push logos to edges, center text */
   align-items: center; /* Vertically center items */
   width: 100%; /* Ensure it spans the full width */
-  padding: 10px 0; /* Optional: Add vertical padding */
+  padding: 20px ; /* Optional: Add vertical padding */
+  box-sizing: border-box;
 }
+
 .HANDlogo {
   width: 150px; /* Adjust logo size as needed */
   height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
+
 h1 {
+  font-size: 2.5rem;
   text-align: center; /* Center the text */
+  flex-grow: 1;
   margin: 0; /* Remove default margin */
-  font-size: 40px; /* Adjust font size as needed */
 }
 
-
-.nav-toggle {
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-
-
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block; /* Show hamburger on mobile */
-  }
-  nav {
-    display: none; /* Hide nav by default */
-  }
-  nav.active {
-    display: flex; /* Show nav when toggled */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #ff6f61;
-  }
-  nav a {
-    padding: 10px;
-    text-align: center;
-  }
-}
-
-/* Desktops (1024px and above) */
-@media (min-width: 1025px) {
-  .card {
-    width: 25%; /* Original width for desktop */
-  }
-}
-
-
-
-/* Mobile devices (up to 768px) */
-@media (max-width: 768px) {
+/*Reactive media*/
+@media screen and (max-width: 768px){
   .HeaderItems {
-    flex-direction: column; /* Stack logo and text vertically */
+    flex-direction: column;
     align-items: center;
+    padding-top: 40px; /* Space for logo */
   }
+
   .HANDlogo {
-    width: 100px; /* Smaller logo on mobile */
+    position: static; /* Remove absolute positioning */
+    width: 80px; /* Smaller size for mobile */
+    margin-bottom: 20px;
   }
+  
   h1 {
-    font-size: 24px; /* Smaller heading on mobile */
-  }
-  nav a {
-    margin: 0.5rem; /* Reduce spacing between nav links */
-    font-size: 14px; /* Smaller font size */
-  }
-  .cards {
-    flex-direction: column; /* Stack cards vertically */
-    align-items: center;
-  }
-  .card {
-    width: 80%; /* Full width for cards on mobile */
-    margin-bottom: 1rem;
-  }
-  .center-wrapper {
-    margin: 0 10px; /* Smaller margins on mobile */
+    font-size: 1.8rem;
   }
 }
-
-/* Tablets (768px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .HANDlogo {
-    width: 120px; /* Medium-sized logo */
-  }
-  h1 {
-    font-size: 32px; /* Medium-sized heading */
-  }
-  .card {
-    width: 40%; /* Two cards per row */
-  }
-}
-
-/* Desktops (1024px and above) */
-@media (min-width: 1025px) {
-  .card {
-    width: 25%; /* Original width for desktop */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
-.HeaderItems {
-  display: flex; /* Use Flexbox for layout */
- /* align-items: center; /* Vertically center the logo and text */
- /* justify-content: flex-start; /* Align content to the left */
-/*  gap: 50px; /* Add space between the logo and text */
-/*  padding: 10px; /* Optional: Add padding for better spacing */
-/*}
-
-.HANDlogo {
-  width: 150px; /* Adjust the logo size as needed */
-  /*height: auto; /* Maintain aspect ratio */
-/*
-}*/
-
 
 header {
   background: #ff6f61;
@@ -197,7 +109,131 @@ footer {
   padding: 1rem;
   bottom: auto;
   position: static;
-}/*
+}
+/*
+@media screen and (max-width: 768){
+ 
+
+}/*769 910
+/*409 /*my phone
+
+
+
+
+
+
+
+/*Make sure the screen sized work out
+.nav-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show hamburger on mobile 
+  }
+  nav {
+    display: none; /* Hide nav by default 
+  }
+  nav.active {
+    display: flex; /* Show nav when toggled 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #ff6f61;
+  }
+  nav a {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* Desktops (1024px and above) 
+@media (min-width: 1025px) {
+  .card {
+    width: 25%; /* Original width for desktop 
+  }
+}
+
+/* Mobile devices (up to 768px) 
+@media (max-width: 768px) {
+  .HeaderItems {
+    flex-direction: column; /* Stack logo and text vertically 
+    align-items: center;
+  }
+  .HANDlogo {
+    width: 100px; /* Smaller logo on mobile 
+  }
+  h1 {
+    font-size: 24px; /* Smaller heading on mobile 
+  }
+  nav a {
+    margin: 0.5rem; /* Reduce spacing between nav links 
+    font-size: 14px; /* Smaller font size 
+  }
+  .cards {
+    flex-direction: column; /* Stack cards vertically 
+    align-items: center;
+  }
+  .card {
+    width: 80%; /* Full width for cards on mobile 
+    margin-bottom: 1rem;
+  }
+  .center-wrapper {
+    margin: 0 10px; /* Smaller margins on mobile 
+  }
+}
+
+/* Tablets (768px to 1024px) 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .HANDlogo {
+    width: 120px; /* Medium-sized logo
+  }
+  h1 {
+    font-size: 32px; /* Medium-sized heading 
+  }
+  .card {
+    width: 40%; /* Two cards per row 
+  }
+}
+
+/* Desktops (1024px and above) 
+@media (min-width: 1025px) {
+  .card {
+    width: 25%; /* Original width for desktop 
+  }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+.HeaderItems {
+  display: flex; /* Use Flexbox for layout */
+ /* align-items: center; /* Vertically center the logo and text */
+ /* justify-content: flex-start; /* Align content to the left */
+/*  gap: 50px; /* Add space between the logo and text */
+/*  padding: 10px; /* Optional: Add padding for better spacing */
+/*}
+
+.HANDlogo {
+  width: 150px; /* Adjust the logo size as needed */
+  /*height: auto; /* Maintain aspect ratio */
+/*
+}*/
+
+/*
 footer {
   position: relative;
   bottom: 0;
