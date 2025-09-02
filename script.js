@@ -1,3 +1,31 @@
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html' ;//|| 'AboutPage.html' || 'TrainingPage.html' || 'ContactPage.html'
+      const navLinks = document.querySelectorAll('.nav-menu a');
+
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+
+        document.addEventListener('DOMContentLoaded', () => {
+      const currentPage = window.location.pathname.split('/').pop() || 'AboutPage.html' ;//||  || 'TrainingPage.html' || 'ContactPage.html'
+      const navLinks = document.querySelectorAll('.nav-menu a');
+
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
+
 // script.js
 //document.querySelector('.nav-toggle').addEventListener('click', () => {
 //  document.querySelector('nav').classList.toggle('active');

@@ -30,6 +30,32 @@ h1 {
   margin: 0; /* Remove default margin */
 }
 
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .nav-menu a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .nav-menu a.active {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+  }
+
 /*Reactive media*/
 @media screen and (max-width: 768px){
   .HeaderItems {
@@ -47,15 +73,30 @@ h1 {
   h1 {
     font-size: 1.8rem;
   }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
 }
 
 @media (max-width: 409px) {
   .HANDlogo {
-    width: 50px; /* Even smaller for very small screens */
+    width: 80px; /* Even smaller for very small screens */
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  .nav-menu a {
+    font-size: 0.9rem;
   }
 }
 
@@ -71,7 +112,11 @@ header {
   border-radius: 8px;
 }
 nav a {
-  margin: 0.5rem;
+  border: 1px  rgb(210, 57, 57);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+  margin: 1rem;
   color: white;
   text-decoration: none;
   font-weight: bold;
