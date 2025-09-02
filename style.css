@@ -49,6 +49,16 @@ h1 {
   }
 }
 
+@media (max-width: 409px) {
+  .HANDlogo {
+    width: 50px; /* Even smaller for very small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 header {
   background: #ff6f61;
   color: white;
