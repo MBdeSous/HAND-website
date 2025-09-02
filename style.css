@@ -8,7 +8,7 @@ body {
 
 .HeaderItems {
   display: flex; /* Use Flexbox for layout */
-  justify-content: space space-between; /* Push logos to edges, center text */
+  justify-content: space-between; /* Push logos to edges, center text */
   align-items: center; /* Vertically center items */
   width: 100%; /* Ensure it spans the full width */
   padding: 20px ; /* Optional: Add vertical padding */
