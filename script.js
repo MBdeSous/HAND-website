@@ -1,12 +1,12 @@
 // script.js
-document.querySelector('.nav-toggle').addEventListener('click', () => {
-  document.querySelector('nav').classList.toggle('active');
-});
+//document.querySelector('.nav-toggle').addEventListener('click', () => {
+//  document.querySelector('nav').classList.toggle('active');
+//});
 
-document.querySelector('.nav-toggle').addEventListener('click', () => {
-  const menu = document.querySelector('#menu');
-  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-});
+//document.querySelector('.nav-toggle').addEventListener('click', () => {
+//  const menu = document.querySelector('#menu');
+//  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+//});
 
 // script.js
 //document.querySelectorAll('a[href^="#"]').forEach(anchor => {
